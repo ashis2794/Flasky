@@ -1,0 +1,9 @@
+<h1>Hello Everybody!</h1>
+<p>This is my first web page!</p>
+<p>Hello my name is {{ name }}.</p>
+<p>{{ message|safe }}</p>
+<h3>Some names:</h3>
+{% for name in names %}
+    <em>{{ name }}</em><br/>
+{% endfor %}
+{{ names.0|reverse }}
